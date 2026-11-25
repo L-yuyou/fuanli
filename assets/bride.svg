@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1080" fill="none">
+  <defs>
+    <linearGradient id="gownMain" x1="320" y1="330" x2="320" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7F1C17"/><stop offset=".32" stop-color="#651411"/><stop offset=".7" stop-color="#450C0A"/><stop offset="1" stop-color="#200403"/>
+    </linearGradient>
+    <linearGradient id="gownLight" x1="150" y1="360" x2="560" y2="1010" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BA4A3B" stop-opacity=".55"/><stop offset=".32" stop-color="#85261E" stop-opacity=".22"/><stop offset="1" stop-color="#2B0504" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="veilG" x1="320" y1="70" x2="320" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9D3025"/><stop offset=".38" stop-color="#7D1F18"/><stop offset=".82" stop-color="#53100C"/><stop offset="1" stop-color="#330806"/>
+    </linearGradient>
+    <linearGradient id="skinBride" x1="320" y1="140" x2="320" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D3C3AA"/><stop offset=".6" stop-color="#B9A58A"/><stop offset="1" stop-color="#8A7460"/>
+    </linearGradient>
+    <linearGradient id="handBride" x1="180" y1="740" x2="180" y2="880" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D3C1A9"/><stop offset="1" stop-color="#8F7761"/>
+    </linearGradient>
+    <filter id="brideBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="grainB" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="44"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- aura and floor stain -->
+  <ellipse cx="320" cy="540" rx="238" ry="420" fill="#2A0504" opacity=".3" filter="url(#brideBlur)"/>
+  <ellipse cx="320" cy="1040" rx="210" ry="30" fill="#000" opacity=".6" filter="url(#brideBlur)"/>
+
+  <!-- trailing veil behind -->
+  <path d="M234 180C214 330 184 488 143 624C121 701 103 779 92 861C146 883 183 869 206 837C174 775 180 706 203 641C228 563 244 481 252 403L234 180Z" fill="#330806" opacity=".9"/>
+  <path d="M406 180C428 330 458 488 499 624C521 701 541 779 552 861C498 887 461 872 438 839C470 777 464 706 441 641C416 563 400 481 392 403L406 180Z" fill="#330806" opacity=".9"/>
+  <path d="M109 849C151 868 181 857 201 836C168 781 176 708 198 647C156 732 126 791 109 849Z" fill="#65140F" opacity=".4"/>
+  <path d="M531 852C492 872 462 861 442 840C473 783 466 711 444 649C487 735 514 795 531 852Z" fill="#5B120D" opacity=".35"/>
+
+  <!-- skirt: fitted waist to flowing A-line -->
+  <path d="M272 565C264 626 242 707 210 789C179 869 154 956 142 1034C217 1051 270 1047 320 1045C370 1047 423 1051 498 1034C486 956 461 869 430 789C398 707 376 626 368 565H272Z" fill="url(#gownMain)"/>
+  <path d="M272 565C264 626 242 707 210 789C179 869 154 956 142 1034C217 1051 270 1047 320 1045C370 1047 423 1051 498 1034C486 956 461 869 430 789C398 707 376 626 368 565H272Z" fill="url(#gownLight)"/>
+  <!-- skirt side shadow and pleats -->
+  <path d="M272 565C263 643 238 729 204 813C173 891 152 962 142 1034C177 1043 206 1045 241 1046C226 962 237 868 263 782C283 714 300 643 304 575L272 565Z" fill="#2C0605" opacity=".38"/>
+  <path d="M368 565C377 643 402 729 436 813C467 891 488 962 498 1034C463 1043 434 1045 399 1046C414 962 403 868 377 782C357 714 340 643 336 575L368 565Z" fill="#1F0403" opacity=".32"/>
+  <g opacity=".3" stroke="#BB4A3C" stroke-width="1.4">
+    <path d="M295 577C284 676 258 776 224 871C203 928 184 987 174 1038"/>
+    <path d="M345 577C356 676 382 776 416 871C437 928 456 987 466 1038"/>
+    <path d="M320 586V1041"/>
+  </g>
+  <!-- gold skirt border and embroidery -->
+  <path d="M151 1008C220 1024 268 1020 320 1018C372 1020 420 1024 489 1008" stroke="#B88242" stroke-width="2" opacity=".42"/>
+  <path d="M151 1026C220 1041 268 1038 320 1036C372 1038 420 1041 489 1026" stroke="#D2A45D" stroke-width="1" opacity=".3"/>
+  <g opacity=".4" stroke="#CEA05C" stroke-width="1.2" fill="none">
+    <path d="M222 889C238 858 278 855 297 885C277 908 240 916 222 889Z"/>
+    <path d="M240 881C252 870 264 870 277 879"/>
+    <path d="M243 893C235 900 229 913 226 927C242 923 252 913 257 901"/>
+    <path d="M279 892C287 900 294 910 297 921C283 921 272 913 266 903"/>
+    <path d="M360 930C376 900 414 897 433 928C413 951 378 957 360 930Z"/>
+    <path d="M378 922C389 911 401 911 414 920"/>
+    <path d="M381 934C373 941 368 954 365 968C381 964 390 954 395 942"/>
+    <path d="M417 933C425 941 431 951 434 962C420 962 409 954 403 944"/>
+    <path d="M292 792C302 775 322 774 333 788C322 804 304 807 292 792Z"/>
+    <path d="M303 786C310 779 316 779 325 785"/>
+    <path d="M308 797C301 807 298 820 298 834C312 826 319 815 321 802"/>
+  </g>
+  <g opacity=".25" fill="#E0B66E">
+    <circle cx="200" cy="957" r="1.5"/><circle cx="264" cy="981" r="1.2"/><circle cx="389" cy="984" r="1.4"/>
+    <circle cx="457" cy="945" r="1.2"/><circle cx="330" cy="926" r="1.4"/><circle cx="311" cy="1009" r="1.2"/>
+  </g>
+
+  <!-- torso -->
+  <path d="M207 383C230 351 270 333 320 333C370 333 410 351 433 383C440 430 428 500 399 557C378 598 352 615 320 616C288 615 262 598 241 557C212 500 200 430 207 383Z" fill="url(#gownMain)"/>
+  <path d="M207 383C230 351 270 333 320 333C370 333 410 351 433 383C440 430 428 500 399 557C378 598 352 615 320 616C288 615 262 598 241 557C212 500 200 430 207 383Z" fill="url(#gownLight)" opacity=".7"/>
+  <path d="M207 383C190 431 195 502 218 556C237 599 262 615 291 620C260 590 246 548 242 504C237 454 246 407 263 372L207 383Z" fill="#2B0605" opacity=".34"/>
+  <path d="M433 383C450 431 445 502 422 556C403 599 378 615 349 620C380 590 394 548 398 504C403 454 394 407 377 372L433 383Z" fill="#240403" opacity=".3"/>
+  <!-- waist sash -->
+  <path d="M263 548C298 559 342 559 377 548L385 596C349 609 291 609 255 596L263 548Z" fill="#4A0C09"/>
+  <path d="M263 548C298 559 342 559 377 548" stroke="#BD8E4A" stroke-width="2.4" opacity=".55"/>
+  <path d="M257 593C292 603 348 603 383 593" stroke="#C49351" stroke-width="1" opacity=".35"/>
+  <g fill="#CE9B54" opacity=".55">
+    <rect x="314" y="558" width="12" height="31" rx="2"/>
+    <path d="M311 590H329L320 616L311 590Z"/>
+  </g>
+  <!-- collar and chest -->
+  <path d="M284 335C293 355 305 372 320 381C335 372 347 355 356 335C344 325 332 321 320 321C308 321 296 325 284 335Z" fill="#350806"/>
+  <path d="M284 335C293 355 305 372 320 381C335 372 347 355 356 335" stroke="#CCA05B" stroke-width="2" opacity=".55"/>
+  <path d="M284 335C268 348 254 364 244 384C262 394 280 397 298 397L320 381L284 335Z" fill="#5A120E"/>
+  <path d="M356 335C372 348 386 364 396 384C378 394 360 397 342 397L320 381L356 335Z" fill="#5E140F"/>
+  <path d="M320 381V516" stroke="#B68C4E" stroke-width="1.5" opacity=".35"/>
+  <g fill="#D0A15A" opacity=".5">
+    <circle cx="320" cy="399" r="3"/><circle cx="320" cy="421" r="3"/><circle cx="320" cy="443" r="3"/><circle cx="320" cy="465" r="3"/>
+  </g>
+  <!-- torso gold clouds -->
+  <g opacity=".33" stroke="#C59450" stroke-width="1.1">
+    <path d="M251 440C257 424 270 418 283 424C275 439 264 448 251 440Z"/>
+    <path d="M376 478C382 461 396 456 409 463C400 477 389 486 376 478Z"/>
+    <path d="M246 496C252 479 266 474 279 480C270 495 259 504 246 496Z"/>
+  </g>
+
+  <!-- sleeves -->
+  <path d="M224 368C190 383 162 421 143 475C123 533 118 603 127 666C136 732 151 791 172 832C191 819 204 788 211 745C220 687 213 626 226 577C236 537 245 460 256 408L224 368Z" fill="url(#gownMain)"/>
+  <path d="M224 368C190 383 162 421 143 475C123 533 118 603 127 666C136 732 151 791 172 832C191 819 204 788 211 745C220 687 213 626 226 577C236 537 245 460 256 408L224 368Z" fill="url(#gownLight)" opacity=".58"/>
+  <path d="M416 368C450 383 478 421 497 475C517 533 522 603 513 666C504 732 489 791 468 832C449 819 436 788 429 745C420 687 427 626 414 577C404 537 395 460 384 408L416 368Z" fill="url(#gownMain)"/>
+  <path d="M416 368C450 383 478 421 497 475C517 533 522 603 513 666C504 732 489 791 468 832C449 819 436 788 429 745C420 687 427 626 414 577C404 537 395 460 384 408L416 368Z" fill="url(#gownLight)" opacity=".48"/>
+  <!-- sleeve openings / cuffs -->
+  <path d="M131 655C151 720 165 783 181 826L239 806C216 750 202 686 203 626L131 655Z" fill="#2A0605" opacity=".62"/>
+  <path d="M509 655C489 720 475 783 459 826L401 806C424 750 438 686 437 626L509 655Z" fill="#250504" opacity=".6"/>
+  <g stroke="#C08C47" stroke-width="2" opacity=".46">
+    <path d="M138 678C155 727 168 776 181 816"/>
+    <path d="M144 705C158 744 170 783 179 809"/>
+    <path d="M502 678C485 727 472 776 459 816"/>
+    <path d="M496 705C482 744 470 783 461 809"/>
+  </g>
+  <g opacity=".3" stroke="#C34C3C" stroke-width="1.2">
+    <path d="M172 397C151 464 142 544 151 611"/>
+    <path d="M468 397C489 464 498 544 489 611"/>
+  </g>
+
+  <!-- hands -->
+  <g>
+    <path d="M189 811C187 838 184 865 181 887C179 907 168 921 157 929C151 919 156 908 162 901C153 907 144 910 139 905C135 900 142 893 151 887C146 884 144 878 149 874C155 869 162 866 168 863C164 843 166 822 173 809C179 800 188 801 189 811Z" fill="url(#handBride)"/>
+    <path d="M451 811C453 838 456 865 459 887C461 907 472 921 483 929C489 919 484 908 478 901C487 907 496 910 501 905C505 900 498 893 489 887C494 884 496 878 491 874C485 869 478 866 472 863C476 843 474 822 467 809C461 800 452 801 451 811Z" fill="url(#handBride)"/>
+    <g stroke="#79624D" stroke-width="1" opacity=".45">
+      <path d="M184 846C177 858 171 875 170 890M181 865C172 875 165 887 163 897"/>
+      <path d="M456 846C463 858 469 875 470 890M459 865C468 875 475 887 477 897"/>
+    </g>
+    <!-- a red thread, barely there -->
+    <path d="M181 886C155 908 137 941 135 982C150 975 160 960 164 946C167 969 175 990 185 1006" stroke="#6E0C0A" stroke-width="1.3" opacity=".55"/>
+    <path d="M459 887C481 914 490 948 486 985" stroke="#6E0C0A" stroke-width="1.1" opacity=".4"/>
+  </g>
+
+  <!-- neck and head -->
+  <path d="M293 279H347V344C338 356 328 362 320 362C312 362 302 356 293 344V279Z" fill="url(#skinBride)"/>
+  <path d="M298 288C304 315 310 331 320 341C330 331 336 315 342 288" stroke="#7B6652" stroke-width="1" opacity=".4"/>
+  <!-- face -->
+  <path d="M268 177C263 218 270 261 289 289C301 305 311 316 320 321C329 316 339 305 351 289C370 261 377 218 372 177C356 150 284 150 268 177Z" fill="url(#skinBride)"/>
+  <path d="M268 177C263 218 270 261 289 289C301 305 311 316 320 321C329 316 339 305 351 289C370 261 377 218 372 177C356 150 284 150 268 177Z" fill="#4A1F18" opacity=".18"/>
+  <!-- hair -->
+  <path d="M265 188C269 145 290 128 320 128C350 128 371 145 375 188C357 168 340 160 320 160C300 160 283 168 265 188Z" fill="#170E0C"/>
+  <path d="M265 190C249 226 251 270 270 316C255 309 246 280 246 247C246 218 253 198 265 190Z" fill="#1B100E"/>
+  <path d="M375 190C391 226 389 270 370 316C385 309 394 280 394 247C394 218 387 198 375 190Z" fill="#1B100E"/>
+  <!-- features, faint under the veil -->
+  <g opacity=".82">
+    <path d="M283 238C292 232 303 233 311 238" stroke="#37201C" stroke-width="2" stroke-linecap="round"/>
+    <path d="M329 238C337 233 348 232 357 238" stroke="#37201C" stroke-width="2" stroke-linecap="round"/>
+    <path d="M282 230C291 225 302 225 311 230" stroke="#4B2E26" stroke-width="1.1" opacity=".6"/>
+    <path d="M329 230C338 225 349 225 358 230" stroke="#4B2E26" stroke-width="1.1" opacity=".6"/>
+    <path d="M320 239C318 251 317 260 319 264" stroke="#76604F" stroke-width="1" opacity=".4"/>
+    <path d="M311 280C316 277 324 277 329 280C324 284 316 284 311 280Z" fill="#621B17"/>
+    <path d="M314 280H326" stroke="#A35A52" stroke-width=".7" opacity=".45"/>
+  </g>
+  <!-- crown -->
+  <g>
+    <path d="M244 177C252 127 282 101 320 101C358 101 388 127 396 177C374 152 349 143 320 143C291 143 266 152 244 177Z" fill="#24110F"/>
+    <path d="M244 177C252 127 282 101 320 101C358 101 388 127 396 177" stroke="#9B7037" stroke-width="2.5"/>
+    <g fill="#C29147" opacity=".8">
+      <path d="M276 123C284 109 296 110 300 124C293 137 283 136 276 123Z"/>
+      <path d="M309 108C318 92 333 94 338 109C330 123 317 120 309 108Z"/>
+      <path d="M350 126C359 112 372 116 375 130C367 142 357 139 350 126Z"/>
+      <path d="M255 150C263 138 275 140 277 153C270 163 260 161 255 150Z"/>
+      <path d="M383 151C391 139 403 144 402 156C394 166 387 162 383 151Z"/>
+    </g>
+    <g stroke="#A97C3B" stroke-width="1.3" opacity=".92">
+      <path d="M297 112C290 85 302 65 317 51C315 72 327 86 319 111"/>
+      <path d="M340 113C344 82 361 72 378 69C366 87 372 107 356 124"/>
+      <path d="M277 120C267 90 251 82 238 81C250 100 245 116 260 132"/>
+    </g>
+    <g fill="#9A1D17" stroke="#D3A249" stroke-width="1">
+      <circle cx="258" cy="181" r="4.5"/><circle cx="270" cy="176" r="3.6"/><circle cx="282" cy="171" r="3.2"/>
+      <circle cx="382" cy="181" r="4.5"/><circle cx="370" cy="176" r="3.6"/><circle cx="358" cy="171" r="3.2"/>
+    </g>
+    <!-- hanging gold beads -->
+    <g stroke="#A97C3B" stroke-width="1" opacity=".7">
+      <path d="M256 190V243M264 193V232M272 195V222"/>
+      <path d="M384 190V243M376 193V232M368 195V222"/>
+    </g>
+    <g fill="#CB9C4F" opacity=".8">
+      <circle cx="256" cy="244" r="2.8"/><circle cx="264" cy="233" r="2.2"/><circle cx="272" cy="223" r="2.2"/>
+      <circle cx="384" cy="244" r="2.8"/><circle cx="376" cy="233" r="2.2"/><circle cx="368" cy="223" r="2.2"/>
+    </g>
+  </g>
+
+  <!-- front veil over face -->
+  <path d="M243 180C247 130 277 101 320 101C363 101 393 130 397 180C400 242 381 310 357 363C336 410 334 470 320 510C306 468 300 408 283 363C260 310 240 242 243 180Z" fill="url(#veilG)" opacity=".88"/>
+  <path d="M243 180C247 130 277 101 320 101C363 101 393 130 397 180C400 242 381 310 357 363C336 410 334 470 320 510C306 468 300 408 283 363C260 310 240 242 243 180Z" fill="#4E0E0B" opacity=".16"/>
+  <!-- face ghosting through -->
+  <path d="M268 177C263 218 270 261 289 289C301 305 311 316 320 321C329 316 339 305 351 289C370 261 377 218 372 177C356 150 284 150 268 177Z" fill="#7D1B16" opacity=".2"/>
+  <g opacity=".38">
+    <path d="M283 238C292 232 303 233 311 238" stroke="#1A0908" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M329 238C337 233 348 232 357 238" stroke="#1A0908" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M311 280C316 277 324 277 329 280C324 284 316 284 311 280Z" fill="#420D0B"/>
+  </g>
+  <!-- veil embroidery -->
+  <g opacity=".55" stroke="#D6A65D" stroke-width="1.2" fill="none">
+    <path d="M320 113V163"/>
+    <path d="M286 128C297 139 305 157 309 176C297 169 288 154 283 141C280 134 282 130 286 128Z"/>
+    <path d="M354 128C343 139 335 157 331 176C343 169 352 154 357 141C360 134 358 130 354 128Z"/>
+    <path d="M296 192C307 208 333 208 344 192C333 226 307 226 296 192Z"/>
+    <path d="M276 223C291 233 307 237 320 237C333 237 349 233 364 223" opacity=".4"/>
+    <path d="M269 264C278 284 296 300 320 305C344 300 362 284 371 264" opacity=".3"/>
+    <path d="M244 194C241 249 252 303 276 349" opacity=".26"/>
+    <path d="M396 194C399 249 388 303 364 349" opacity=".26"/>
+    <path d="M273 380C289 396 305 411 320 427C335 411 351 396 367 380" opacity=".3"/>
+  </g>
+  <!-- veil trim and folds -->
+  <path d="M243 180C247 130 277 101 320 101C363 101 393 130 397 180" stroke="#C39450" stroke-width="2" opacity=".5"/>
+  <path d="M320 510C307 466 300 408 283 363C260 310 240 242 243 180" stroke="#BC8D4E" stroke-width="1.2" opacity=".28"/>
+  <path d="M320 510C333 466 340 408 357 363C380 310 400 242 397 180" stroke="#BC8D4E" stroke-width="1.2" opacity=".24"/>
+  <path d="M280 345C289 397 294 459 320 494C305 448 300 397 284 354L280 345Z" fill="#2A0605" opacity=".38"/>
+  <path d="M360 345C351 397 346 459 320 494C335 448 340 397 356 354L360 345Z" fill="#260504" opacity=".34"/>
+  <!-- earrings -->
+  <g>
+    <circle cx="261" cy="257" r="3" fill="#A57A35" opacity=".8"/>
+    <path d="M261 260V273" stroke="#A57A35" stroke-width="1" opacity=".6"/>
+    <path d="M256 273C260 279 266 278 266 273C263 270 259 270 256 273Z" fill="#4B5E4D" opacity=".75"/>
+    <circle cx="379" cy="257" r="3" fill="#A57A35" opacity=".8"/>
+    <path d="M379 260V273" stroke="#A57A35" stroke-width="1" opacity=".6"/>
+    <path d="M374 273C378 279 384 278 384 273C381 270 377 270 374 273Z" fill="#4B5E4D" opacity=".75"/>
+  </g>
+
+  <!-- wisps of ash near hem -->
+  <g fill="#D0A15A">
+    <circle cx="207" cy="386" r="1.1" opacity=".25"/><circle cx="452" cy="437" r="1.2" opacity=".2"/>
+    <circle cx="175" cy="697" r="1" opacity=".22"/><circle cx="475" cy="706" r="1.1" opacity=".18"/>
+    <circle cx="261" cy="888" r="1" opacity=".2"/><circle cx="388" cy="964" r="1.2" opacity=".14"/>
+  </g>
+  <rect width="640" height="1080" filter="url(#grainB)" opacity=".3" style="mix-blend-mode:soft-light"/>
+</svg>

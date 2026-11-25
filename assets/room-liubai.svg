@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" fill="none">
+  <defs>
+    <linearGradient id="wall2" x1="420" y1="20" x2="410" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8D0C1"/><stop offset=".52" stop-color="#C7BDAA"/><stop offset="1" stop-color="#A99C86"/>
+    </linearGradient>
+    <linearGradient id="floor2" x1="380" y1="407" x2="380" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#796548"/><stop offset="1" stop-color="#4F4130"/>
+    </linearGradient>
+    <linearGradient id="attic2" x1="170" y1="26" x2="570" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9B0A0"/><stop offset="1" stop-color="#8E8473"/>
+    </linearGradient>
+    <linearGradient id="mirror2" x1="280" y1="130" x2="280" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9AA9F"/><stop offset=".42" stop-color="#686D64"/><stop offset="1" stop-color="#313630"/>
+    </linearGradient>
+    <linearGradient id="window2" x1="574" y1="80" x2="710" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#616E61"/><stop offset=".55" stop-color="#37443A"/><stop offset="1" stop-color="#202A23"/>
+    </linearGradient>
+    <linearGradient id="sheet2" x1="410" y1="330" x2="650" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DAD3C5"/><stop offset="1" stop-color="#A99E8A"/>
+    </linearGradient>
+    <radialGradient id="lamp2" cx="0" cy="0" r="1" gradientTransform="translate(640 94) rotate(96) scale(270)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E2C68D" stop-opacity=".38"/><stop offset="1" stop-color="#E2C68D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="soft2b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="grain2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" seed="47"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer>
+    </filter>
+    <clipPath id="clip2"><rect width="760" height="560"/></clipPath>
+    <clipPath id="mirrorClip"><ellipse cx="274" cy="264" rx="106" ry="133"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip2)">
+    <rect width="760" height="560" fill="url(#wall2)"/>
+    <!-- slanted attic ceiling -->
+    <path d="M0 0H760V181L0 281V0Z" fill="url(#attic2)"/>
+    <path d="M0 272L760 172V196L0 296V272Z" fill="#62594C" opacity=".72"/>
+    <path d="M0 276L760 176" stroke="#3E372D" stroke-width="8"/>
+    <path d="M0 282L760 182" stroke="#A39683" stroke-width="2" opacity=".4"/>
+    <g stroke="#4D4438" stroke-width="16" opacity=".86">
+      <path d="M80 0L219 235"/>
+      <path d="M336 0L370 205"/>
+      <path d="M584 0L526 185"/>
+    </g>
+    <g stroke="#7E7262" stroke-width="2" opacity=".3">
+      <path d="M87 0L226 235"/><path d="M343 0L377 205"/><path d="M591 0L533 185"/>
+    </g>
+    <!-- window at right -->
+    <rect x="574" y="88" width="147" height="252" fill="#2C2A23"/>
+    <rect x="584" y="98" width="127" height="232" fill="url(#window2)"/>
+    <g opacity=".55">
+      <ellipse cx="628" cy="206" rx="57" ry="102" fill="#26362B" filter="url(#soft2)"/>
+      <path d="M652 328C649 269 656 222 674 180" stroke="#1B211B" stroke-width="4" opacity=".65"/>
+      <ellipse cx="687" cy="157" rx="54" ry="79" fill="#202D23" filter="url(#soft2)"/>
+      <ellipse cx="605" cy="114" rx="45" ry="30" fill="#6E7C68" opacity=".18" filter="url(#soft2)"/>
+    </g>
+    <rect x="641" y="98" width="7" height="232" fill="#28251E"/>
+    <rect x="584" y="209" width="127" height="7" fill="#28251E"/>
+    <path d="M568 78H728V91H568V78Z" fill="#3B352B"/>
+    <path d="M568 339H728V350H568V339Z" fill="#3B352B"/>
+    <!-- dust light beam from window -->
+    <path d="M584 101L728 86L559 513L431 560L584 101Z" fill="#E6D4A8" opacity=".07" filter="url(#soft2b)"/>
+    <ellipse cx="641" cy="97" rx="240" ry="190" fill="url(#lamp2)" filter="url(#soft2)"/>
+    <!-- floor -->
+    <path d="M0 403H760V560H0V403Z" fill="url(#floor2)"/>
+    <path d="M0 402H760V416H0V402Z" fill="#403327"/>
+    <g stroke="#3D3124" stroke-width="1.4" opacity=".36">
+      <path d="M0 445H760M0 489H760M0 533H760"/>
+      <path d="M95 403L36 560M244 403L207 560M402 403L407 560M563 403L617 560M707 403L778 560"/>
+    </g>
+    <!-- mirror on wall -->
+    <path d="M184 88C211 65 335 65 362 88" stroke="#4A4034" stroke-width="2" opacity=".5"/>
+    <circle cx="274" cy="264" r="120" fill="#3B3227"/>
+    <circle cx="274" cy="264" r="113" fill="#7D6C54"/>
+    <circle cx="274" cy="264" r="106" fill="url(#mirror2)"/>
+    <g clip-path="url(#mirrorClip)">
+      <!-- impossible reflection: long corridor -->
+      <path d="M169 397L219 138H330L380 397H169Z" fill="#4E4B41"/>
+      <path d="M245 145H305V292H245V145Z" fill="#22251F"/>
+      <path d="M230 132H320V149H230V132Z" fill="#1A1A16"/>
+      <path d="M178 326L210 172H244L231 352L178 397V326Z" fill="#3B3D34"/>
+      <path d="M370 326L339 172H305L317 352L370 397V326Z" fill="#33362E"/>
+      <g stroke="#6F6A59" stroke-width="2" opacity=".4">
+        <path d="M191 294L210 203M221 335L230 246M358 294L339 203M328 335L320 246"/>
+      </g>
+      <path d="M246 397L269 304H284L307 397H246Z" fill="#2F2B23"/>
+      <!-- tiny red figure -->
+      <g opacity=".88">
+        <path d="M275 239C272 261 268 283 266 311H292C289 284 285 262 282 239H275Z" fill="#701E18"/>
+        <path d="M268 244H290L286 257H272L268 244Z" fill="#8C2B21"/>
+        <circle cx="279" cy="233" r="8" fill="#C1B39C"/>
+        <path d="M271 232C271 222 287 221 288 233L286 239H273L271 232Z" fill="#251F1B"/>
+        <path d="M275 252C265 262 263 277 265 294" stroke="#5A1713" stroke-width="4" stroke-linecap="round"/>
+        <path d="M285 252C295 263 297 278 295 295" stroke="#5A1713" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <ellipse cx="274" cy="277" rx="106" ry="133" fill="none" stroke="#C4C5B8" stroke-width="1.3" opacity=".25"/>
+      <path d="M182 191C230 155 321 156 367 203" stroke="#D4D6C9" stroke-width="14" opacity=".08" filter="url(#soft2b)"/>
+      <path d="M196 354C232 386 316 387 352 353" stroke="#151713" stroke-width="24" opacity=".3" filter="url(#soft2b)"/>
+    </g>
+    <circle cx="274" cy="264" r="107" fill="none" stroke="#3D352A" stroke-width="4"/>
+    <path d="M180 141C189 99 227 88 274 88C321 88 359 99 368 141" stroke="#62533F" stroke-width="5" opacity=".65"/>
+    <!-- red paper cut on mirror -->
+    <g transform="translate(358 351) rotate(7)" opacity=".9">
+      <path d="M0 0H23V8H30V23H18V30H0V18H-8V5H0V0Z" fill="#8F2A20"/>
+      <path d="M5 7H12V12H18V19H11V24H5V17H0V11H5V7Z" fill="#D9CAAA" opacity=".35"/>
+    </g>
+    <!-- dresser under mirror -->
+    <path d="M141 386H409V407H141V386Z" fill="#4C3C2C"/>
+    <path d="M151 407H399V469H151V407Z" fill="#735A3F"/>
+    <path d="M151 407H399V417H151V407Z" fill="#8D714F"/>
+    <path d="M155 469H393V507H155V469Z" fill="#5E4832"/>
+    <path d="M270 407V469" stroke="#443324" stroke-width="2" opacity=".7"/>
+    <circle cx="262" cy="440" r="4" fill="#B69A6B"/><circle cx="285" cy="440" r="4" fill="#B69A6B"/>
+    <path d="M194 487V535M358 487V535" stroke="#3D2E20" stroke-width="8"/>
+    <rect x="215" y="370" width="78" height="15" fill="#483426"/>
+    <rect x="221" y="360" width="29" height="10" fill="#7C6040"/>
+    <g>
+      <path d="M335 370C349 367 361 373 369 383" stroke="#32271D" stroke-width="2"/>
+      <path d="M347 379C355 377 361 379 367 383" stroke="#B8A27C" stroke-width="2"/>
+    </g>
+    <ellipse cx="274" cy="500" rx="132" ry="19" fill="#261C13" opacity=".34" filter="url(#soft2)"/>
+    <!-- bed right -->
+    <path d="M459 345C530 321 637 320 737 335V375H459V345Z" fill="#5A4A37"/>
+    <path d="M470 369H760V499H470V369Z" fill="#6D5841"/>
+    <path d="M477 373C520 355 590 357 628 372C674 390 720 380 760 357V449C703 469 648 454 596 462C546 470 504 462 477 483V373Z" fill="url(#sheet2)"/>
+    <path d="M479 345H760V373H479V345Z" fill="#D5CDBF"/>
+    <path d="M521 367C568 385 603 389 644 386C688 382 723 371 759 354V375C718 393 675 402 625 405C578 407 543 397 513 385L521 367Z" fill="#B7AB98"/>
+    <path d="M666 373C684 393 681 414 662 437C648 422 648 397 666 373Z" fill="#C4B9A8"/>
+    <path d="M477 480H760V500H477V480Z" fill="#443629"/>
+    <path d="M491 500V546M751 500V544" stroke="#30251A" stroke-width="7"/>
+    <!-- pillow dent -->
+    <ellipse cx="613" cy="356" rx="46" ry="9" fill="#9A8E7C" opacity=".58" filter="url(#soft2b)"/>
+    <!-- old logbook left floor -->
+    <g transform="translate(36 471) rotate(-8)">
+      <rect width="93" height="68" fill="#4A3A2A"/>
+      <rect x="5" y="5" width="83" height="58" fill="#B9A98F"/>
+      <path d="M12 18H78M12 28H72M12 38H77M12 48H62" stroke="#6B5943" stroke-width="1.5" opacity=".55"/>
+      <path d="M7 7H88V12H7V7Z" fill="#8C2A20"/>
+    </g>
+    <!-- lopsided hanging paper -->
+    <g transform="translate(478 84) rotate(5)">
+      <path d="M0 0H26V62L13 55L0 62V0Z" fill="#D9C8A4" opacity=".8"/>
+      <path d="M13 10V46M6 18H20M7 31H19" stroke="#8F2B21" stroke-width="1.2" opacity=".6"/>
+    </g>
+    <!-- atmosphere -->
+    <ellipse cx="624" cy="92" rx="310" ry="240" fill="url(#lamp2)" opacity=".6"/>
+    <path d="M0 0H760V560H0V0Z" fill="#262016" opacity=".12"/>
+    <rect width="760" height="560" filter="url(#grain2)" opacity=".5" style="mix-blend-mode:multiply"/>
+    <path d="M0 0H760V560H0V0Z" stroke="#392F23" stroke-opacity=".4"/>
+  </g>
+</svg>

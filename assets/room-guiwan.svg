@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" fill="none">
+  <defs>
+    <linearGradient id="wall3" x1="380" y1="0" x2="380" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3D2B24"/><stop offset=".52" stop-color="#51372D"/><stop offset="1" stop-color="#2A1D18"/>
+    </linearGradient>
+    <linearGradient id="floor3" x1="360" y1="397" x2="420" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#432C22"/><stop offset="1" stop-color="#241611"/>
+    </linearGradient>
+    <linearGradient id="curtain3" x1="480" y1="110" x2="640" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C2A21"/><stop offset=".55" stop-color="#6F1E18"/><stop offset="1" stop-color="#3C110E"/>
+    </linearGradient>
+    <linearGradient id="silk3" x1="520" y1="335" x2="689" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D2C2A8"/><stop offset=".55" stop-color="#B79F82"/><stop offset="1" stop-color="#8B6F55"/>
+    </linearGradient>
+    <linearGradient id="mirror3" x1="190" y1="120" x2="262" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#594C42"/><stop offset=".5" stop-color="#2F2924"/><stop offset="1" stop-color="#131110"/>
+    </linearGradient>
+    <radialGradient id="candleGlow" cx="0" cy="0" r="1" gradientTransform="translate(365 315) rotate(90) scale(270 220)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD790" stop-opacity=".5"/><stop offset="1" stop-color="#FFD790" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp3" cx="0" cy="0" r="1" gradientTransform="translate(664 151) rotate(102) scale(300 240)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC987" stop-opacity=".24"/><stop offset="1" stop-color="#FFC987" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft3a" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="soft3b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="grain3" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" seed="81"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer>
+    </filter>
+    <clipPath id="clip3"><rect width="760" height="560"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip3)">
+    <rect width="760" height="560" fill="url(#wall3)"/>
+    <g opacity=".2">
+      <path d="M30 0V560M96 0V560M159 0V560M727 0V560M680 0V560" stroke="#1C120F" stroke-width="2"/>
+      <path d="M0 90H760M0 200H760" stroke="#1C120F" stroke-width="1"/>
+    </g>
+    <path d="M0 52H760V72H0V52Z" fill="#241713"/>
+    <path d="M0 375H760V399H0V375Z" fill="#2B1913"/>
+    <!-- round window left -->
+    <circle cx="87" cy="192" r="105" fill="#241914"/>
+    <circle cx="87" cy="192" r="91" fill="#101412"/>
+    <g clip-path="url(#clip3)">
+      <circle cx="87" cy="192" r="90" fill="#252C27"/>
+      <g opacity=".7">
+        <path d="M50 282C59 220 45 169 19 121" stroke="#111A15" stroke-width="8"/>
+        <path d="M80 280C86 222 104 182 139 151" stroke="#111A15" stroke-width="6"/>
+        <ellipse cx="47" cy="130" rx="52" ry="45" fill="#18251D"/>
+        <ellipse cx="118" cy="152" rx="62" ry="49" fill="#16231C"/>
+        <ellipse cx="18" cy="213" rx="44" ry="55" fill="#111C17"/>
+      </g>
+      <g fill="#B0AF86" opacity=".17" filter="url(#soft3a)">
+        <circle cx="102" cy="102" r="44"/><circle cx="27" cy="151" r="23"/><circle cx="143" cy="218" r="34"/>
+      </g>
+      <path d="M0 272H174" stroke="#1E2821" stroke-width="7"/>
+    </g>
+    <circle cx="87" cy="192" r="98" fill="none" stroke="#5D4634" stroke-width="8"/>
+    <g stroke="#3B291C" stroke-width="2" opacity=".7">
+      <path d="M87 87V99M87 285V297M-18 192H-6M180 192H192"/>
+      <path d="M32 120L41 127M139 259L148 266M142 120L133 127M31 259L40 266"/>
+    </g>
+    <!-- wall scroll painting -->
+    <g transform="translate(566 75)">
+      <rect x="0" y="0" width="94" height="214" fill="#BFAE91" opacity=".14"/>
+      <rect x="6" y="6" width="82" height="202" fill="#CFBC98" opacity=".2"/>
+      <path d="M22 169C32 136 44 144 51 114C60 146 72 128 82 171" stroke="#1D1611" stroke-width="2" opacity=".5"/>
+      <path d="M48 59C57 65 59 83 51 96C43 86 41 68 48 59Z" fill="#1D1611" opacity=".34"/>
+      <rect x="37" y="47" width="27" height="3" fill="#7F251D" opacity=".45"/>
+      <path d="M30 179H77" stroke="#1D1611" stroke-width="1" opacity=".44"/>
+    </g>
+    <!-- paper 囍 on wall -->
+    <g transform="translate(264 174)" opacity=".73">
+      <path d="M0 9H34V0H47V10H82V24H58V36H79V50H54V65H34V44H29V65H8V50H-15V36H8V24H-16V10H0V9ZM10 23V35H24V23H10ZM35 23V35H50V23H35ZM7 42V53H23V42H7ZM34 42V53H49V42H34Z" fill="#9B3125"/>
+      <path d="M33 1V73" stroke="#D2B08C" stroke-width="1" opacity=".2"/>
+    </g>
+    <!-- floor -->
+    <path d="M0 401H760V560H0V401Z" fill="url(#floor3)"/>
+    <g stroke="#170E0A" stroke-width="1.3" opacity=".48">
+      <path d="M0 444H760M0 488H760M0 532H760"/>
+      <path d="M108 401L64 560M252 401L226 560M402 401L399 560M560 401L599 560M704 401L756 560"/>
+    </g>
+    <!-- canopy bed -->
+    <path d="M438 94H702V122H438V94Z" fill="#2A1712"/>
+    <path d="M456 122V377H478V122H456Z" fill="#4A271F"/>
+    <path d="M696 122V377H716V122H696Z" fill="#4A271F"/>
+    <path d="M450 91C566 44 642 61 710 101" stroke="#1F1310" stroke-width="17"/>
+    <path d="M450 103C560 58 642 72 707 112" stroke="#73412F" stroke-width="2" opacity=".4"/>
+    <!-- hanging canopy fabric -->
+    <path d="M464 122C482 175 477 250 460 342C512 305 536 243 530 122H464Z" fill="url(#curtain3)" opacity=".9"/>
+    <path d="M689 122C681 185 691 257 707 339C661 305 643 234 648 122H689Z" fill="url(#curtain3)" opacity=".94"/>
+    <path d="M471 132C476 208 465 267 468 311M679 132C676 203 686 265 686 309" stroke="#B0503E" stroke-width="1.4" opacity=".24"/>
+    <path d="M531 122C529 203 516 265 474 329" stroke="#D7A989" stroke-width="1" opacity=".18"/>
+    <path d="M641 122C646 197 652 255 690 321" stroke="#D7A989" stroke-width="1" opacity=".16"/>
+    <!-- bed base -->
+    <path d="M476 335H694V392H476V335Z" fill="#3C2018"/>
+    <path d="M484 330H686V361H484V330Z" fill="#D0BFA3"/>
+    <path d="M480 355C527 338 576 349 609 361C644 374 670 359 696 344V387H480V355Z" fill="url(#silk3)"/>
+    <path d="M483 333C534 355 573 352 611 360C645 367 670 360 694 344V366C651 389 607 374 568 374C528 374 502 386 483 394V333Z" fill="#A48B70" opacity=".55"/>
+    <!-- pillows -->
+    <g transform="translate(519 315) rotate(4)">
+      <path d="M0 0H125L112 42H10L0 0Z" fill="#C6B498"/>
+      <path d="M11 30H110" stroke="#8B6F55" stroke-width="2" opacity=".6"/>
+      <path d="M59 0V41" stroke="#8B6F55" stroke-width="1.5" opacity=".4"/>
+    </g>
+    <!-- blanket folds -->
+    <path d="M510 367C558 393 612 384 660 371C676 398 678 423 654 444C606 457 550 441 503 447C492 417 493 390 510 367Z" fill="#BBA487"/>
+    <path d="M515 380C566 405 614 395 656 385" stroke="#E3D3B9" stroke-width="2" opacity=".35"/>
+    <path d="M507 414C558 432 615 419 663 407" stroke="#80664F" stroke-width="2" opacity=".4"/>
+    <path d="M476 460H700V482H476V460Z" fill="#321B14"/>
+    <path d="M492 482V542M685 482V542" stroke="#23130F" stroke-width="10"/>
+    <!-- red embroidered shoes under bed -->
+    <g transform="translate(597 486)">
+      <path d="M0 7C2 -6 28 -10 31 4C34 18 59 19 61 30C48 41 13 39 3 31C-4 25 -2 15 0 7Z" fill="#8E221A"/>
+      <path d="M7 7C19 2 28 5 31 14C25 22 10 24 4 20C2 15 3 10 7 7Z" fill="#A83628"/>
+      <path d="M11 10C19 15 24 21 28 26" stroke="#D0A06C" stroke-width="1.2" opacity=".55"/>
+      <path d="M24 44C39 42 53 48 62 60" stroke="#4C2420" stroke-width="2" opacity=".7"/>
+    </g>
+    <g transform="translate(649 505) rotate(6)">
+      <path d="M0 7C2 -6 28 -10 31 4C34 18 59 19 61 30C48 41 13 39 3 31C-4 25 -2 15 0 7Z" fill="#791C16"/>
+      <path d="M7 7C19 2 28 5 31 14C25 22 10 24 4 20C2 15 3 10 7 7Z" fill="#952B20"/>
+      <path d="M11 10C19 15 24 21 28 26" stroke="#D0A06C" stroke-width="1.2" opacity=".55"/>
+    </g>
+    <!-- vanity left -->
+    <path d="M137 290H333V316H137V290Z" fill="#2D1C15"/>
+    <path d="M146 316H325V367H146V316Z" fill="#4A2D21"/>
+    <path d="M146 316H325V326H146V316Z" fill="#6A4532"/>
+    <path d="M148 367H323V394H148V367Z" fill="#3A241B"/>
+    <path d="M168 394V467M306 394V467" stroke="#1F120E" stroke-width="9"/>
+    <path d="M155 465H319" stroke="#1F120E" stroke-width="5"/>
+    <!-- vanity mirror -->
+    <path d="M187 115C208 91 293 90 318 117" stroke="#2A1A14" stroke-width="6" opacity=".6"/>
+    <ellipse cx="252" cy="231" rx="91" ry="126" fill="#321E16"/>
+    <ellipse cx="252" cy="231" rx="83" ry="118" fill="#7D5D46"/>
+    <ellipse cx="252" cy="231" rx="76" ry="110" fill="url(#mirror3)"/>
+    <!-- reflection: an empty red chair / silhouette -->
+    <g opacity=".6">
+      <path d="M215 309C216 273 219 245 226 227C235 203 258 202 269 222C279 241 282 272 284 309H215Z" fill="#2F1512"/>
+      <ellipse cx="249" cy="198" rx="20" ry="25" fill="#171110"/>
+      <path d="M231 207C227 189 246 174 263 183C278 191 272 215 262 224C248 237 234 225 231 207Z" fill="#1B1412"/>
+      <path d="M229 301C239 277 269 273 283 298" stroke="#4B1D18" stroke-width="2" opacity=".55"/>
+    </g>
+    <path d="M218 165C233 147 276 148 291 168" stroke="#C0B2A0" stroke-width="12" opacity=".06" filter="url(#soft3b)"/>
+    <ellipse cx="252" cy="231" rx="77" ry="111" fill="none" stroke="#21130E" stroke-width="4"/>
+    <!-- comb, powder box -->
+    <ellipse cx="192" cy="334" rx="24" ry="8" fill="#2A1711"/>
+    <path d="M173 314C187 309 203 312 213 322" stroke="#B59A75" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#B59A75" opacity=".65">
+      <path d="M174 314L172 322M179 312L178 321M184 311L184 320M189 311L190 320M195 313L197 321M201 315L203 322M207 318L209 323"/>
+    </g>
+    <rect x="287" y="326" width="26" height="10" fill="#7A1D17"/>
+    <!-- side table with two cups, left foreground -->
+    <path d="M25 402H150V419H25V402Z" fill="#382219"/>
+    <path d="M34 419V483M140 419V483" stroke="#21130E" stroke-width="7"/>
+    <path d="M63 392C62 379 72 369 84 365C96 369 106 379 105 392C96 401 72 401 63 392Z" fill="#D5C3A8"/>
+    <path d="M78 392H91V398C86 402 82 402 78 398V392Z" fill="#6F1B15"/>
+    <path d="M112 389C111 379 118 372 127 370C136 374 142 381 141 389C134 396 119 396 112 389Z" fill="#D5C3A8"/>
+    <path d="M124 389H134V394C130 397 126 397 124 394V389Z" fill="#6F1B15"/>
+    <!-- candle -->
+    <path d="M343 412H356V456H343V412Z" fill="#D4C4AA"/>
+    <path d="M349 412C347 399 349 391 351 384C354 394 353 402 352 412" stroke="#301D14" stroke-width="2"/>
+    <ellipse cx="350" cy="384" rx="5" ry="11" fill="#F7C976"/>
+    <ellipse cx="350" cy="384" rx="14" ry="24" fill="#FFD58A" opacity=".18" filter="url(#soft3b)"/>
+    <path d="M323 456H377V464H323V456Z" fill="#6C3C2A"/>
+    <!-- right hanging lantern -->
+    <path d="M734 0C731 34 738 63 733 88" stroke="#371F16" stroke-width="2"/>
+    <path d="M708 88H756" stroke="#24130E" stroke-width="4"/>
+    <path d="M713 94H751L746 155H718L713 94Z" fill="#9C2B1F"/>
+    <path d="M713 94H751M718 154H746" stroke="#C89E63" stroke-width="2"/>
+    <path d="M731 155V169" stroke="#9B7A4A" stroke-width="2"/>
+    <path d="M726 169H736L731 181L726 169Z" fill="#882015"/>
+    <ellipse cx="732" cy="124" rx="48" ry="56" fill="#FFCB86" opacity=".12" filter="url(#soft3a)"/>
+    <!-- incense smoke from table -->
+    <path d="M347 399C338 384 354 374 346 359C338 343 355 332 349 316" stroke="#D8C3A3" stroke-width="1.4" opacity=".16" stroke-linecap="round"/>
+    <!-- atmosphere overlays -->
+    <ellipse cx="374" cy="344" rx="270" ry="220" fill="url(#candleGlow)"/>
+    <ellipse cx="664" cy="128" rx="290" ry="270" fill="url(#lamp3)"/>
+    <path d="M0 0H760V560H0V0Z" fill="#120908" opacity=".18"/>
+    <rect width="760" height="560" filter="url(#grain3)" opacity=".52" style="mix-blend-mode:multiply"/>
+    <path d="M0 0H760V560H0V0Z" stroke="#2A1712" stroke-opacity=".65"/>
+  </g>
+</svg>

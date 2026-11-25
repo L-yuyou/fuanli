@@ -1,0 +1,357 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" fill="none">
+  <defs>
+    <linearGradient id="wallLight" x1="120" y1="0" x2="800" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1E9D8"/>
+      <stop offset=".48" stop-color="#E5DAC4"/>
+      <stop offset="1" stop-color="#D8CAB2"/>
+    </linearGradient>
+    <linearGradient id="skyIn" x1="450" y1="230" x2="450" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F0DD"/>
+      <stop offset=".55" stop-color="#EBDFC6"/>
+      <stop offset="1" stop-color="#D9C8AA"/>
+    </linearGradient>
+    <linearGradient id="backWall" x1="280" y1="340" x2="640" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3EAD6"/>
+      <stop offset=".62" stop-color="#E9DDC4"/>
+      <stop offset="1" stop-color="#D6C5A8"/>
+    </linearGradient>
+    <linearGradient id="doorRed" x1="380" y1="410" x2="530" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9372C"/>
+      <stop offset=".7" stop-color="#8D281F"/>
+      <stop offset="1" stop-color="#6E1E18"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="450" y1="720" x2="450" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BEAD90"/>
+      <stop offset="1" stop-color="#9C8A6E"/>
+    </linearGradient>
+    <radialGradient id="sunPool" cx="0" cy="0" r="1" gradientTransform="translate(330 785) rotate(-24) scale(280 440)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE6AD" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#F5D69B" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#F5D69B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gateShade" cx="0" cy="0" r="1" gradientTransform="translate(620 410) rotate(118) scale(500 630)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A2C1D" stop-opacity="0"/>
+      <stop offset=".72" stop-color="#2D2116" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#2D2116" stop-opacity=".38"/>
+    </radialGradient>
+    <linearGradient id="roof" x1="450" y1="190" x2="450" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A3730"/>
+      <stop offset=".65" stop-color="#292722"/>
+      <stop offset="1" stop-color="#47433A"/>
+    </linearGradient>
+    <linearGradient id="lantern" x1="630" y1="390" x2="685" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C74335"/>
+      <stop offset=".55" stop-color="#A02B21"/>
+      <stop offset="1" stop-color="#711D18"/>
+    </linearGradient>
+    <filter id="blur16" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="blur5" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="paperNoise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="9" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncR type="linear" slope=".5" intercept=".25"/>
+        <feFuncG type="linear" slope=".5" intercept=".25"/>
+        <feFuncB type="linear" slope=".5" intercept=".25"/>
+        <feFuncA type="linear" slope=".12"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="gateClip">
+      <circle cx="450" cy="568" r="329"/>
+    </clipPath>
+    <clipPath id="doorClip">
+      <rect x="367" y="392" width="166" height="368" rx="1"/>
+    </clipPath>
+  </defs>
+
+  <!-- outer plaster wall -->
+  <rect width="900" height="1120" fill="url(#wallLight)"/>
+  <path d="M0 0H900V150H0V0Z" fill="#D8CAB1"/>
+  <path d="M0 146C153 129 272 158 448 144C621 131 760 152 900 135V177C753 190 623 168 447 181C270 195 151 168 0 184V146Z" fill="#C4B296"/>
+  <path d="M0 160C157 143 273 174 447 158C640 141 758 167 900 150V157C756 174 636 149 447 165C266 182 154 151 0 168V160Z" fill="#A9977E" opacity=".55"/>
+
+  <!-- roof eaves above gate -->
+  <g opacity=".96">
+    <path d="M22 104C151 82 253 108 451 91C633 76 761 100 879 84V127C756 142 632 118 449 134C259 151 150 122 22 143V104Z" fill="#282722"/>
+    <path d="M22 112C150 91 252 117 450 100C632 85 760 109 878 93" stroke="#4C473D" stroke-width="2" opacity=".7"/>
+    <g stroke="#514B40" stroke-width="1.4" opacity=".55">
+      <path d="M48 111C56 118 57 127 51 143"/><path d="M95 106C103 114 104 124 98 138"/>
+      <path d="M144 103C153 112 154 123 147 136"/><path d="M194 101C203 110 204 121 197 136"/>
+      <path d="M244 101C253 110 254 120 247 134"/><path d="M294 98C302 107 303 118 297 132"/>
+      <path d="M344 98C353 106 354 117 347 131"/><path d="M395 95C403 104 404 115 397 129"/>
+      <path d="M445 95C454 103 455 114 448 128"/><path d="M495 95C504 103 505 114 498 128"/>
+      <path d="M546 94C555 103 556 114 549 129"/><path d="M596 97C605 106 606 117 599 132"/>
+      <path d="M646 96C655 105 656 116 649 130"/><path d="M696 94C705 103 706 114 699 128"/>
+      <path d="M746 95C755 104 756 115 749 129"/><path d="M797 97C805 106 806 117 799 131"/>
+      <path d="M848 95C856 103 857 114 851 128"/>
+    </g>
+    <path d="M0 95C145 74 285 101 454 86C624 70 773 96 900 78V98C769 117 621 91 455 107C284 123 149 97 0 116V95Z" fill="#191A17" opacity=".55"/>
+    <path d="M0 96C144 76 285 103 454 88C624 72 773 98 900 80" stroke="#7A7160" stroke-width="1.5" opacity=".45"/>
+  </g>
+
+  <!-- wall weathering -->
+  <g opacity=".26" filter="url(#blur16)">
+    <path d="M84 334C117 303 160 309 175 345C188 376 155 415 117 402C83 390 63 356 84 334Z" fill="#B19D7F"/>
+    <path d="M757 741C796 708 860 723 881 767C900 808 859 851 811 832C770 816 728 769 757 741Z" fill="#AC9475"/>
+    <path d="M64 755C102 725 152 747 155 787C158 824 118 851 82 835C49 820 36 779 64 755Z" fill="#AD997A"/>
+    <path d="M690 183C729 160 773 178 779 213C784 246 750 273 717 261C687 250 665 201 690 183Z" fill="#9D896B"/>
+  </g>
+  <g stroke="#88775F" stroke-width="1" opacity=".22">
+    <path d="M100 459C126 470 125 493 146 505C164 516 183 508 200 524"/>
+    <path d="M767 540C746 554 747 574 729 588C715 599 701 595 690 612"/>
+    <path d="M117 666C139 663 146 643 165 640"/>
+    <path d="M808 334C792 355 797 370 780 384"/>
+  </g>
+
+  <!-- moon gate opening shadow -->
+  <circle cx="450" cy="568" r="340" fill="#342B20" opacity=".12" filter="url(#blur5)"/>
+  <circle cx="450" cy="568" r="330" fill="#2D2519"/>
+
+  <!-- courtyard seen through gate -->
+  <g clip-path="url(#gateClip)">
+    <rect x="118" y="234" width="664" height="720" fill="url(#skyIn)"/>
+    <rect x="118" y="234" width="664" height="120" fill="#EEE3CD"/>
+    <!-- far eave -->
+    <path d="M118 294C207 280 308 294 450 281C586 269 702 286 782 274V317H118V294Z" fill="#26251F"/>
+    <path d="M118 307C210 293 307 309 450 295C589 282 704 300 782 288V301C700 313 590 296 450 310C303 324 207 307 118 320V307Z" fill="#555043"/>
+    <path d="M118 309C212 296 306 312 451 298C590 285 703 303 782 291" stroke="#817865" stroke-width="1.4" opacity=".55"/>
+    <g stroke="#5F5849" stroke-width="1" opacity=".35">
+      <path d="M164 292C169 300 169 309 164 319"/><path d="M222 286C227 294 227 305 222 315"/>
+      <path d="M282 283C287 292 287 303 282 313"/><path d="M342 279C347 289 347 301 342 311"/>
+      <path d="M403 278C408 287 408 299 403 309"/><path d="M466 277C471 286 471 298 466 309"/>
+      <path d="M527 276C532 286 532 298 527 309"/><path d="M589 279C594 288 594 300 589 311"/>
+      <path d="M649 281C654 290 654 302 649 313"/><path d="M710 281C715 290 715 302 710 313"/>
+    </g>
+    <!-- far wall -->
+    <path d="M118 320H782V795H118V320Z" fill="url(#backWall)"/>
+    <path d="M118 320H782V335H118V320Z" fill="#D9C9AC" opacity=".7"/>
+    <g opacity=".18" filter="url(#blur16)">
+      <path d="M200 500C234 469 280 476 296 514C310 547 278 584 239 573C202 563 177 526 200 500Z" fill="#8C7657"/>
+      <path d="M648 624C675 599 717 605 726 636C735 666 703 691 671 681C642 672 625 645 648 624Z" fill="#8A7355"/>
+    </g>
+    <!-- side lattice windows -->
+    <g opacity=".86">
+      <rect x="168" y="440" width="132" height="228" fill="#473C2D"/>
+      <rect x="177" y="449" width="114" height="210" fill="#8D7457"/>
+      <rect x="184" y="456" width="100" height="196" fill="#D9C7A7"/>
+      <g stroke="#6B5841" stroke-width="2">
+        <path d="M234 456V652M184 556H284M207 456V652M261 456V652M184 506H284M184 606H284"/>
+      </g>
+      <path d="M168 429H300V445H168V429Z" fill="#3C3427"/>
+      <path d="M168 668H300V678H168V668Z" fill="#3C3427"/>
+      <rect x="600" y="440" width="132" height="228" fill="#473C2D"/>
+      <rect x="609" y="449" width="114" height="210" fill="#8D7457"/>
+      <rect x="616" y="456" width="100" height="196" fill="#D9C7A7"/>
+      <g stroke="#6B5841" stroke-width="2">
+        <path d="M666 456V652M616 556H716M639 456V652M693 456V652M616 506H716M616 606H716"/>
+      </g>
+      <path d="M600 429H732V445H600V429Z" fill="#3C3427"/>
+      <path d="M600 668H732V678H600V668Z" fill="#3C3427"/>
+    </g>
+    <!-- door frame and red double door -->
+    <path d="M347 372H553V781H347V372Z" fill="#44392B"/>
+    <path d="M356 382H544V775H356V382Z" fill="#6B543B"/>
+    <g clip-path="url(#doorClip)">
+      <rect x="367" y="392" width="166" height="368" fill="url(#doorRed)"/>
+      <path d="M450 392V760" stroke="#642019" stroke-width="3"/>
+      <g stroke="#74221B" stroke-width="1.6" opacity=".65">
+        <path d="M382 392V760M405 392V760M427 392V760M472 392V760M495 392V760M518 392V760"/>
+      </g>
+      <g opacity=".42" stroke="#4C1712" stroke-width="1.2">
+        <path d="M367 420H533M367 452H533M367 486H533M367 521H533M367 558H533M367 596H533M367 636H533M367 678H533M367 718H533"/>
+      </g>
+      <path d="M367 540H533V558H367V540Z" fill="#6F211A" opacity=".75"/>
+      <g>
+        <circle cx="428" cy="595" r="13" fill="#9B7D49"/>
+        <circle cx="428" cy="595" r="9" fill="none" stroke="#D6B77C" stroke-width="2.4"/>
+        <path d="M424 603C420 615 421 625 428 632" stroke="#9B7D49" stroke-width="2" opacity=".8"/>
+        <circle cx="472" cy="595" r="13" fill="#9B7D49"/>
+        <circle cx="472" cy="595" r="9" fill="none" stroke="#D6B77C" stroke-width="2.4"/>
+        <path d="M476 603C480 615 479 625 472 632" stroke="#9B7D49" stroke-width="2" opacity=".8"/>
+      </g>
+      <path d="M367 742H533V760H367V742Z" fill="#552019" opacity=".8"/>
+      <path d="M390 422H421V514H390V422Z" fill="#A93D30" opacity=".22"/>
+    </g>
+    <!-- door threshold -->
+    <path d="M338 771H562V798H338V771Z" fill="#80705A"/>
+    <path d="M338 771H562V780H338V771Z" fill="#AD9B80"/>
+    <path d="M348 798H552V812H348V798Z" fill="#6B5C49"/>
+    <!-- faded couplets -->
+    <g opacity=".86">
+      <path d="M332 408H349V729H332V408Z" fill="#7F2A22"/>
+      <path d="M551 408H568V729H551V408Z" fill="#7F2A22"/>
+      <g fill="#D5BDA0" opacity=".66">
+        <rect x="338" y="433" width="5" height="5"/><rect x="338" y="455" width="5" height="5"/><rect x="338" y="478" width="5" height="5"/>
+        <rect x="338" y="502" width="5" height="5"/><rect x="338" y="526" width="5" height="5"/><rect x="338" y="551" width="5" height="5"/>
+        <rect x="338" y="576" width="5" height="5"/><rect x="338" y="603" width="5" height="5"/><rect x="338" y="631" width="5" height="5"/>
+        <rect x="557" y="433" width="5" height="5"/><rect x="557" y="455" width="5" height="5"/><rect x="557" y="478" width="5" height="5"/>
+        <rect x="557" y="502" width="5" height="5"/><rect x="557" y="526" width="5" height="5"/><rect x="557" y="551" width="5" height="5"/>
+        <rect x="557" y="576" width="5" height="5"/><rect x="557" y="603" width="5" height="5"/><rect x="557" y="631" width="5" height="5"/>
+      </g>
+    </g>
+    <!-- plaque above door -->
+    <rect x="388" y="342" width="124" height="32" fill="#3B3429"/>
+    <rect x="393" y="347" width="114" height="22" fill="#5B503E"/>
+    <g fill="#C7B18E" opacity=".75">
+      <rect x="412" y="353" width="7" height="7"/><rect x="426" y="353" width="7" height="7"/><rect x="446" y="353" width="7" height="7"/><rect x="462" y="353" width="7" height="7"/><rect x="479" y="353" width="7" height="7"/>
+    </g>
+    <!-- stone floor -->
+    <path d="M118 795H782V954H118V795Z" fill="url(#floor)"/>
+    <g stroke="#88785E" stroke-width="1.3" opacity=".62">
+      <path d="M118 834H782M118 878H782M118 924H782"/>
+      <path d="M170 795L142 954M262 795L243 954M362 795L351 954M464 795L457 954M562 795L575 954M662 795L679 954M758 795L786 954"/>
+      <path d="M218 795L205 954M314 795L297 954M414 795L403 954M514 795L499 954M614 795L607 954M714 795L731 954"/>
+    </g>
+    <!-- sun pool -->
+    <ellipse cx="330" cy="810" rx="240" ry="138" fill="url(#sunPool)" opacity=".85"/>
+    <path d="M290 795L210 954H356L438 795H290Z" fill="#FFE9B8" opacity=".18" filter="url(#blur5)"/>
+    <!-- tree -->
+    <g>
+      <path d="M236 812C245 725 239 642 253 567C260 530 252 486 230 451C222 438 224 417 238 410C255 401 265 420 266 438C269 474 278 501 282 535C290 592 275 699 278 812H236Z" fill="#4B4030"/>
+      <path d="M250 671C237 613 208 555 166 516" stroke="#4B4030" stroke-width="15" stroke-linecap="round"/>
+      <path d="M253 633C280 574 314 527 358 495" stroke="#4B4030" stroke-width="12" stroke-linecap="round"/>
+      <path d="M246 735C202 699 168 657 144 607" stroke="#4B4030" stroke-width="9" stroke-linecap="round"/>
+      <path d="M266 725C309 694 337 659 355 620" stroke="#4B4030" stroke-width="8" stroke-linecap="round"/>
+      <g fill="#53604B" opacity=".92" filter="url(#blur5)">
+        <ellipse cx="160" cy="480" rx="96" ry="58"/>
+        <ellipse cx="272" cy="438" rx="120" ry="71"/>
+        <ellipse cx="386" cy="474" rx="94" ry="54"/>
+        <ellipse cx="122" cy="550" rx="79" ry="44"/>
+        <ellipse cx="340" cy="532" rx="82" ry="46"/>
+        <ellipse cx="226" cy="379" rx="93" ry="49"/>
+        <ellipse cx="424" cy="410" rx="61" ry="38"/>
+      </g>
+      <g fill="#67725A" opacity=".62">
+        <ellipse cx="183" cy="437" rx="54" ry="28" transform="rotate(-14 183 437)"/>
+        <ellipse cx="306" cy="390" rx="67" ry="31" transform="rotate(-8 306 390)"/>
+        <ellipse cx="394" cy="450" rx="45" ry="23" transform="rotate(9 394 450)"/>
+        <ellipse cx="129" cy="538" rx="42" ry="21" transform="rotate(18 129 538)"/>
+      </g>
+      <g fill="#8A9879" opacity=".55">
+        <ellipse cx="134" cy="448" rx="22" ry="11" transform="rotate(-21 134 448)"/>
+        <ellipse cx="236" cy="353" rx="27" ry="12" transform="rotate(-15 236 353)"/>
+        <ellipse cx="330" cy="367" rx="24" ry="11" transform="rotate(-8 330 367)"/>
+        <ellipse cx="401" cy="408" rx="18" ry="9" transform="rotate(11 401 408)"/>
+        <ellipse cx="90" cy="552" rx="20" ry="9" transform="rotate(25 90 552)"/>
+      </g>
+      <g fill="#3E4939" opacity=".7">
+        <ellipse cx="204" cy="507" rx="36" ry="17" transform="rotate(-12 204 507)"/>
+        <ellipse cx="362" cy="501" rx="33" ry="15" transform="rotate(8 362 501)"/>
+        <ellipse cx="292" cy="465" rx="28" ry="12" transform="rotate(-18 292 465)"/>
+      </g>
+    </g>
+    <!-- light patterned shadows on wall -->
+    <g fill="#6B5840" opacity=".09">
+      <path d="M536 366C596 406 640 462 659 543C620 490 585 438 536 403V366Z"/>
+      <path d="M556 282C615 315 661 364 688 426C650 382 608 345 556 320V282Z"/>
+    </g>
+    <!-- hanging lantern -->
+    <g>
+      <path d="M681 324C671 352 663 371 657 393" stroke="#453A2B" stroke-width="2"/>
+      <path d="M626 394H686" stroke="#3C3225" stroke-width="5" stroke-linecap="round"/>
+      <path d="M632 400H680L675 490H637L632 400Z" fill="url(#lantern)"/>
+      <path d="M632 400H680M636 490H676" stroke="#D2AF71" stroke-width="3"/>
+      <g stroke="#74221B" stroke-width="1.5" opacity=".7">
+        <path d="M640 409V481M649 409V485M658 409V483M667 409V481"/>
+      </g>
+      <g fill="#D7B87A" opacity=".75">
+        <rect x="645" y="424" width="20" height="3"/>
+        <rect x="647" y="438" width="15" height="2"/>
+        <rect x="650" y="454" width="12" height="2"/>
+      </g>
+      <path d="M656 490V511" stroke="#8E6C37" stroke-width="2"/>
+      <path d="M650 512H662L656 529L650 512Z" fill="#9B2C21"/>
+      <path d="M638 492H674" stroke="#2D251A" stroke-width="3"/>
+      <ellipse cx="656" cy="443" rx="34" ry="57" fill="#FFD9A0" opacity=".12" filter="url(#blur16)"/>
+    </g>
+    <!-- cat on threshold -->
+    <g fill="#2B2822">
+      <path d="M520 770C520 748 529 735 535 722C539 711 536 700 543 693C549 686 559 689 562 697C566 707 559 713 560 722C563 739 570 748 570 770H520Z"/>
+      <path d="M543 692L537 678L547 685L553 676L556 691" stroke="#2B2822" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M566 750C580 738 585 719 578 704" stroke="#2B2822" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <!-- potted bamboo left -->
+    <g>
+      <path d="M646 710H710L700 816H656L646 710Z" fill="#6E5037"/>
+      <path d="M646 710H710L707 730H649L646 710Z" fill="#8A694A"/>
+      <g stroke="#42503A" stroke-width="3.4" stroke-linecap="round">
+        <path d="M671 706C668 671 678 632 695 596"/>
+        <path d="M683 701C692 671 704 647 722 628"/>
+        <path d="M662 701C652 671 644 648 630 626"/>
+        <path d="M688 654C684 619 692 591 707 569"/>
+      </g>
+      <g fill="#4D5B43">
+        <path d="M693 611C677 603 660 608 648 621C666 624 681 621 693 611Z"/>
+        <path d="M700 642C718 634 734 637 746 649C729 655 711 652 700 642Z"/>
+        <path d="M711 589C696 578 681 578 668 585C682 595 699 597 711 589Z"/>
+        <path d="M666 631C650 623 634 625 622 635C637 643 655 643 666 631Z"/>
+        <path d="M728 607C742 598 757 600 768 611C753 618 737 617 728 607Z"/>
+        <path d="M644 661C628 654 613 658 604 668C619 674 634 671 644 661Z"/>
+      </g>
+      <path d="M668 816H702" stroke="#3A2E21" stroke-width="5"/>
+    </g>
+    <ellipse cx="448" cy="794" rx="140" ry="20" fill="#3C2F20" opacity=".2" filter="url(#blur16)"/>
+    <rect x="118" y="234" width="664" height="720" fill="url(#gateShade)"/>
+  </g>
+
+  <!-- ring shadow -->
+  <circle cx="450" cy="568" r="344" fill="none" stroke="#3A3022" stroke-width="20" opacity=".12" filter="url(#blur5)"/>
+  <!-- stone gate ring -->
+  <circle cx="450" cy="568" r="337" fill="none" stroke="#8C7E69" stroke-width="18"/>
+  <circle cx="450" cy="568" r="347" fill="none" stroke="#A79880" stroke-width="2" opacity=".8"/>
+  <circle cx="450" cy="568" r="326" fill="none" stroke="#6A5E4C" stroke-width="2" opacity=".65"/>
+  <g stroke="#6B5D4A" stroke-width="2" opacity=".48">
+    <path d="M450 231V243M450 893V906M113 568H126M774 568H787"/>
+    <path d="M327 251L333 263M573 885L579 897M212 443L223 449M677 687L688 693M213 693L224 687M676 449L687 443"/>
+    <path d="M273 315L282 324M618 812L627 821M184 568H196M704 568H716M273 821L282 812M618 324L627 315"/>
+  </g>
+  <circle cx="450" cy="568" r="337" fill="none" stroke="#C3B59B" stroke-width="1.5" opacity=".55"/>
+
+  <!-- foreground objects outside -->
+  <g>
+    <!-- stool -->
+    <path d="M62 955H204L187 988H82L62 955Z" fill="#6F563A"/>
+    <path d="M70 955H196L184 974H82L70 955Z" fill="#8D6E4A"/>
+    <path d="M91 987L79 1067M179 987L190 1067" stroke="#4A3826" stroke-width="8" stroke-linecap="round"/>
+    <path d="M89 1028H180" stroke="#4A3826" stroke-width="5"/>
+    <g>
+      <path d="M114 940H151L147 955H118L114 940Z" fill="#E6DCC7"/>
+      <path d="M117 936H148V942H117V936Z" fill="#D3C6AE"/>
+      <path d="M128 918C130 907 136 900 146 895" stroke="#C6B89F" stroke-width="3" opacity=".55" stroke-linecap="round"/>
+    </g>
+    <ellipse cx="132" cy="1069" rx="97" ry="17" fill="#36291B" opacity=".2" filter="url(#blur5)"/>
+    <!-- hanging cord and bulb at right edge -->
+    <path d="M838 0C831 108 854 190 843 291" stroke="#352B1F" stroke-width="2"/>
+    <circle cx="843" cy="304" r="13" fill="#3A3022"/>
+    <circle cx="843" cy="304" r="6" fill="#D7B985" opacity=".5"/>
+    <path d="M804 120C818 90 861 88 878 129" stroke="#3A3022" stroke-width="3" opacity=".7"/>
+    <path d="M803 138C827 120 857 121 880 144" stroke="#3A3022" stroke-width="2" opacity=".45"/>
+  </g>
+
+  <!-- small carved plaque on wall -->
+  <g>
+    <rect x="705" y="284" width="92" height="158" fill="#42382B" rx="2"/>
+    <rect x="711" y="290" width="80" height="146" fill="#6C5D47"/>
+    <g fill="#BBA886">
+      <rect x="735" y="309" width="32" height="5"/>
+      <rect x="735" y="328" width="32" height="5"/>
+      <rect x="735" y="347" width="32" height="5"/>
+      <rect x="735" y="374" width="32" height="5"/>
+      <rect x="735" y="393" width="32" height="5"/>
+      <rect x="748" y="412" width="5" height="12"/>
+    </g>
+  </g>
+
+  <!-- vignette + paper texture -->
+  <rect width="900" height="1120" fill="url(#gateShade)" opacity=".28"/>
+  <g opacity=".32">
+    <ellipse cx="230" cy="300" rx="290" ry="250" fill="#FFF6E4" opacity=".22" filter="url(#blur16)"/>
+    <path d="M0 0H900V1120H0V0Z" fill="none"/>
+  </g>
+  <rect width="900" height="1120" filter="url(#paperNoise)" opacity=".48" style="mix-blend-mode:multiply"/>
+  <rect width="900" height="1120" fill="url(#wallLight)" opacity=".06"/>
+</svg>

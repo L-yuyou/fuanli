@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" fill="none">
+  <defs>
+    <linearGradient id="hallBg" x1="700" y1="0" x2="700" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D0F0D"/><stop offset=".4" stop-color="#141510"/><stop offset="1" stop-color="#090A08"/>
+    </linearGradient>
+    <linearGradient id="leftWall" x1="0" y1="450" x2="690" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171712"/><stop offset=".55" stop-color="#23241B"/><stop offset="1" stop-color="#2C2B1F"/>
+    </linearGradient>
+    <linearGradient id="rightWall" x1="1400" y1="450" x2="710" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#141410"/><stop offset=".52" stop-color="#202119"/><stop offset="1" stop-color="#2B2A1E"/>
+    </linearGradient>
+    <linearGradient id="floorHall" x1="700" y1="900" x2="700" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10100C"/><stop offset=".5" stop-color="#242118"/><stop offset="1" stop-color="#332E22"/>
+    </linearGradient>
+    <linearGradient id="ceilingHall" x1="700" y1="0" x2="700" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080907"/><stop offset="1" stop-color="#171813"/>
+    </linearGradient>
+    <radialGradient id="endLight" cx="0" cy="0" r="1" gradientTransform="translate(700 480) rotate(90) scale(310 260)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5B34" stop-opacity=".35"/><stop offset=".55" stop-color="#5F492B" stop-opacity=".13"/><stop offset="1" stop-color="#5F492B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lanternGlow" cx="0" cy="0" r="1" gradientTransform="translate(0 0) rotate(90) scale(150 110)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7B675" stop-opacity=".38"/><stop offset=".45" stop-color="#A9834D" stop-opacity=".13"/><stop offset="1" stop-color="#A9834D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="doorwayGlow" x1="700" y1="650" x2="700" y2="315" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#160D08"/><stop offset=".6" stop-color="#3B2717"/><stop offset="1" stop-color="#604126"/>
+    </linearGradient>
+    <filter id="hallBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="hallBlur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="hallGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".62" numOctaves="4" seed="117" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".16"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="paperLantern" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#D8C9A5"/><stop offset=".55" stop-color="#BAA67D"/><stop offset="1" stop-color="#897653"/>
+    </linearGradient>
+    <clipPath id="hallClip"><rect width="1400" height="900"/></clipPath>
+  </defs>
+  <g clip-path="url(#hallClip)">
+    <rect width="1400" height="900" fill="url(#hallBg)"/>
+    <!-- ceiling plane -->
+    <path d="M0 0H1400V90L824 288L575 288L0 90V0Z" fill="url(#ceilingHall)"/>
+    <path d="M0 90L575 288M1400 90L824 288" stroke="#2B2C24" stroke-width="3" opacity=".55"/>
+    <g fill="#0A0B09">
+      <path d="M0 0L575 288L599 276L0 0Z"/>
+      <path d="M1400 0L824 288L800 276L1400 0Z"/>
+    </g>
+    <g stroke="#37372B" stroke-width="2" opacity=".22">
+      <path d="M0 160L590 306M1400 160L810 306M0 234L606 326M1400 234L795 326"/>
+      <path d="M136 0L646 280M342 0L676 275M670 0L704 272M862 0L725 275M1172 0L742 281"/>
+    </g>
+    <!-- side walls -->
+    <path d="M0 90L575 288V655L0 900V90Z" fill="url(#leftWall)"/>
+    <path d="M1400 90L824 288V655L1400 900V90Z" fill="url(#rightWall)"/>
+    <!-- wall base / rail -->
+    <path d="M0 782L575 632V651L0 822V782Z" fill="#17140F"/>
+    <path d="M0 770L575 625V633L0 806V770Z" fill="#47402F" opacity=".3"/>
+    <path d="M1400 782L824 632V651L1400 822V782Z" fill="#15120D"/>
+    <path d="M1400 770L824 625V633L1400 806V770Z" fill="#4A422F" opacity=".26"/>
+    <!-- ceiling beams -->
+    <g>
+      <path d="M0 52L565 276L569 263L0 33V52Z" fill="#0A0A08"/>
+      <path d="M1400 52L835 276L831 263L1400 33V52Z" fill="#0A0A08"/>
+      <path d="M0 220L601 334L603 328L0 207V220Z" fill="#0A0A08" opacity=".7"/>
+      <path d="M1400 220L799 334L797 328L1400 207V220Z" fill="#0A0A08" opacity=".7"/>
+    </g>
+    <!-- left wall doors -->
+    <g>
+      <!-- far left panel -->
+      <g opacity=".9">
+        <path d="M28 225L161 324V675L28 760V225Z" fill="#171611"/>
+        <path d="M40 241L148 327V666L40 743V241Z" fill="#2D281D"/>
+        <path d="M47 254L141 331V658L47 728V254Z" fill="#393225"/>
+        <path d="M78 280H120V628H78V280Z" fill="#1E1B14"/>
+        <path d="M84 292H114V598H84V292Z" fill="#28231A"/>
+        <path d="M99 292V598" stroke="#463C2C" stroke-width="1.4" opacity=".5"/>
+        <circle cx="106" cy="501" r="3" fill="#8B764F" opacity=".5"/>
+        <path d="M58 337L130 384" stroke="#423827" stroke-width="2" opacity=".25"/>
+      </g>
+      <!-- near left door -->
+      <g>
+        <path d="M235 116L438 261V798L235 900V116Z" fill="#12130F"/>
+        <path d="M251 139L419 264V789L251 870V139Z" fill="#332A1D"/>
+        <path d="M262 156L407 269V774L262 851V156Z" fill="#433624"/>
+        <path d="M294 199H382V736H294V199Z" fill="#18140F"/>
+        <path d="M304 216H372V701H304V216Z" fill="#292116"/>
+        <path d="M338 216V701" stroke="#55432D" stroke-width="2" opacity=".55"/>
+        <circle cx="358" cy="465" r="5" fill="#8C7347" opacity=".5"/>
+        <path d="M282 716H392V742H282V716Z" fill="#271E14"/>
+        <path d="M280 716H395V726H280V716Z" fill="#5E4B31" opacity=".3"/>
+        <g transform="translate(310 284) rotate(-3)">
+          <path d="M0 0H24V67L12 59L0 67V0Z" fill="#BCA36E" opacity=".7"/>
+          <path d="M12 11V45M5 18H19M6 29H18" stroke="#6F2119" stroke-width="1.3" opacity=".65"/>
+        </g>
+        <path d="M420 321C429 309 442 307 455 316" stroke="#9B7C48" stroke-width="3" opacity=".3"/>
+      </g>
+      <!-- mid-left door, ajar -->
+      <g>
+        <path d="M449 307L531 355V620L449 661V307Z" fill="#12120E"/>
+        <path d="M456 316L524 357V616L456 651V316Z" fill="#3A2E20"/>
+        <path d="M462 326L517 359V608L462 639V326Z" fill="#4A3A25"/>
+        <path d="M465 329L487 343V598L465 612V329Z" fill="#201A12"/>
+        <path d="M493 340L515 353V602L493 615V340Z" fill="#2C2318"/>
+        <path d="M488 356L503 365V595L488 604V356Z" fill="#D6B77B" opacity=".16"/>
+        <path d="M486 362L505 373V591L486 602V362Z" fill="none" stroke="#8C6F42" stroke-width="1" opacity=".25"/>
+        <path d="M448 299L535 351" stroke="#51412B" stroke-width="4" opacity=".7"/>
+        <g transform="translate(470 405)">
+          <path d="M0 0H17V48L8.5 43L0 48V0Z" fill="#BFA36C" opacity=".5"/>
+          <path d="M8 10V35M4 16H13" stroke="#7A241A" stroke-width="1.1" opacity=".6"/>
+        </g>
+      </g>
+      <!-- small far door -->
+      <g opacity=".82">
+        <path d="M544 370L590 394V563L544 586V370Z" fill="#17150F"/>
+        <path d="M548 377L585 396V559L548 577V377Z" fill="#33291C"/>
+        <path d="M552 384L581 398V555L552 569V384Z" fill="#211B12"/>
+        <circle cx="574" cy="474" r="2.5" fill="#8F7447" opacity=".4"/>
+      </g>
+    </g>
+    <!-- right wall doors -->
+    <g>
+      <g opacity=".9">
+        <path d="M1372 225L1239 324V675L1372 760V225Z" fill="#161510"/>
+        <path d="M1360 241L1252 327V666L1360 743V241Z" fill="#2B271C"/>
+        <path d="M1353 254L1259 331V658L1353 728V254Z" fill="#373024"/>
+        <path d="M1322 280H1280V628H1322V280Z" fill="#1C1913"/>
+        <path d="M1316 292H1286V598H1316V292Z" fill="#272219"/>
+        <path d="M1301 292V598" stroke="#463C2C" stroke-width="1.4" opacity=".5"/>
+        <circle cx="1294" cy="501" r="3" fill="#8B764F" opacity=".5"/>
+      </g>
+      <g>
+        <path d="M1165 116L962 261V798L1165 900V116Z" fill="#11120E"/>
+        <path d="M1149 139L981 264V789L1149 870V139Z" fill="#30281B"/>
+        <path d="M1138 156L993 269V774L1138 851V156Z" fill="#403321"/>
+        <path d="M1106 199H1018V736H1106V199Z" fill="#17130E"/>
+        <path d="M1096 216H1028V701H1096V216Z" fill="#282015"/>
+        <path d="M1062 216V701" stroke="#523F2A" stroke-width="2" opacity=".55"/>
+        <circle cx="1042" cy="465" r="5" fill="#8C7347" opacity=".5"/>
+        <path d="M1118 716H1008V742H1118V716Z" fill="#241C12"/>
+        <path d="M1120 716H1005V726H1120V716Z" fill="#5E4B31" opacity=".25"/>
+        <g transform="translate(1063 284) rotate(3)">
+          <path d="M0 0H24V67L12 59L0 67V0Z" fill="#B49A67" opacity=".55"/>
+          <path d="M12 11V45M5 18H19M6 29H18" stroke="#6F2119" stroke-width="1.3" opacity=".58"/>
+        </g>
+        <path d="M983 330C973 317 960 315 948 323" stroke="#9B7C48" stroke-width="3" opacity=".25"/>
+      </g>
+      <g>
+        <path d="M951 307L869 355V620L951 661V307Z" fill="#12120E"/>
+        <path d="M944 316L876 357V616L944 651V316Z" fill="#392D1F"/>
+        <path d="M938 326L883 359V608L938 639V326Z" fill="#463622"/>
+        <path d="M935 329L913 343V598L935 612V329Z" fill="#201A12"/>
+        <path d="M907 340L885 353V602L907 615V340Z" fill="#2A2116"/>
+        <path d="M952 299L865 351" stroke="#51412B" stroke-width="4" opacity=".65"/>
+        <g transform="translate(918 408)">
+          <path d="M0 0H16V44L8 40L0 44V0Z" fill="#B89B66" opacity=".4"/>
+          <path d="M8 9V32M4 15H12" stroke="#7A241A" stroke-width="1.1" opacity=".55"/>
+        </g>
+      </g>
+      <g opacity=".8">
+        <path d="M856 370L810 394V563L856 586V370Z" fill="#15130E"/>
+        <path d="M852 377L815 396V559L852 577V377Z" fill="#31271A"/>
+        <path d="M848 384L819 398V555L848 569V384Z" fill="#201A11"/>
+      </g>
+    </g>
+    <!-- wainscot strip details left/right -->
+    <g stroke="#5B4A32" stroke-width="2" opacity=".16">
+      <path d="M0 300L559 373M0 360L555 405M0 630L569 565M0 690L573 591M1400 300L841 373M1400 360L845 405M1400 630L831 565M1400 690L827 591"/>
+    </g>
+    <!-- floor -->
+    <path d="M0 900V782L575 632H824L1400 782V900H0Z" fill="url(#floorHall)"/>
+    <g stroke="#4C402C" stroke-width="1.4" opacity=".0"/>
+    <g stroke="#423B2C" stroke-width="1.4" opacity=".28">
+      <path d="M0 879L665 646M1400 879L735 646M0 845L680 627M1400 845L720 627M0 814L692 614M1400 814L708 614"/>
+      <path d="M168 900L592 650M360 900L635 647M556 900L668 647M846 900L732 647M1042 900L765 649M1236 900L808 650"/>
+      <path d="M276 900L613 650M460 900L647 647M656 900L691 647M944 900L766 647M1120 900L792 649M1304 900L832 650"/>
+    </g>
+    <path d="M0 794L574 640M1400 794L826 640" stroke="#716146" stroke-width="2" opacity=".18"/>
+    <path d="M575 632H824V652H575V632Z" fill="#26231A"/>
+    <!-- central far wall and doorway -->
+    <path d="M575 288H824V655H575V288Z" fill="#1B1B15"/>
+    <path d="M575 288H824V303H575V288Z" fill="#363226" opacity=".7"/>
+    <path d="M619 315H781V650H619V315Z" fill="#261D15"/>
+    <path d="M628 325H772V644H628V325Z" fill="url(#doorwayGlow)"/>
+    <path d="M628 325H772V644H628V325Z" fill="none" stroke="#5B432A" stroke-width="3" opacity=".55"/>
+    <path d="M700 325V644" stroke="#3C1E15" stroke-width="3" opacity=".7"/>
+    <path d="M640 620C656 550 676 458 700 361C724 459 742 552 758 620C730 638 668 638 640 620Z" fill="#160C0A" opacity=".6"/>
+    <g opacity=".3">
+      <rect x="649" y="356" width="19" height="55" fill="#C7A46A"/>
+      <rect x="729" y="356" width="19" height="55" fill="#C7A46A"/>
+      <g fill="#7C2118">
+        <rect x="653" y="363" width="11" height="2"/><rect x="653" y="371" width="11" height="2"/><rect x="653" y="379" width="11" height="2"/>
+        <rect x="733" y="363" width="11" height="2"/><rect x="733" y="371" width="11" height="2"/><rect x="733" y="379" width="11" height="2"/>
+      </g>
+    </g>
+    <!-- far threshold -->
+    <path d="M607 642H792V662H607V642Z" fill="#0E0A08"/>
+    <path d="M607 642H792V648H607V642Z" fill="#4E3C26" opacity=".25"/>
+    <!-- hanging paper lanterns left -->
+    <g>
+      <!-- near left -->
+      <path d="M318 0C318 34 320 72 318 104" stroke="#1D1A12" stroke-width="2"/>
+      <path d="M284 104H350" stroke="#30291C" stroke-width="4"/>
+      <path d="M289 112H345L337 186H297L289 112Z" fill="url(#paperLantern)" opacity=".82"/>
+      <path d="M289 112H345M297 186H337" stroke="#584A34" stroke-width="2"/>
+      <path d="M317 186V205" stroke="#756444" stroke-width="2"/>
+      <path d="M311 205H323L317 225L311 205Z" fill="#7B2117" opacity=".9"/>
+      <ellipse cx="317" cy="148" rx="106" ry="98" fill="url(#lanternGlow)"/>
+      <path d="M303 132C311 125 324 127 330 136" stroke="#D2B77F" stroke-width="1.4" opacity=".4"/>
+      <!-- far left -->
+      <path d="M500 270C500 288 504 310 503 330" stroke="#1D1A12" stroke-width="1.5"/>
+      <path d="M486 330H524" stroke="#30291C" stroke-width="2"/>
+      <path d="M489 334H521L516 374H494L489 334Z" fill="url(#paperLantern)" opacity=".65"/>
+      <path d="M503 374V386" stroke="#756444" stroke-width="1.4"/>
+      <path d="M499 386H507L503 399L499 386Z" fill="#7B2117" opacity=".7"/>
+      <ellipse cx="503" cy="352" rx="56" ry="50" fill="url(#lanternGlow)" opacity=".7"/>
+    </g>
+    <!-- hanging lanterns right -->
+    <g>
+      <path d="M1084 0C1084 34 1082 72 1084 104" stroke="#1D1A12" stroke-width="2"/>
+      <path d="M1050 104H1116" stroke="#30291C" stroke-width="4"/>
+      <path d="M1055 112H1111L1103 186H1063L1055 112Z" fill="url(#paperLantern)" opacity=".78"/>
+      <path d="M1055 112H1111M1063 186H1103" stroke="#584A34" stroke-width="2"/>
+      <path d="M1083 186V205" stroke="#756444" stroke-width="2"/>
+      <path d="M1077 205H1089L1083 225L1077 205Z" fill="#7B2117" opacity=".85"/>
+      <ellipse cx="1083" cy="148" rx="104" ry="96" fill="url(#lanternGlow)" opacity=".9"/>
+      <path d="M1097 132C1089 125 1076 127 1070 136" stroke="#D2B77F" stroke-width="1.4" opacity=".4"/>
+      <path d="M900 270C900 288 896 310 897 330" stroke="#1D1A12" stroke-width="1.5"/>
+      <path d="M876 330H914" stroke="#30291C" stroke-width="2"/>
+      <path d="M879 334H911L906 374H884L879 334Z" fill="url(#paperLantern)" opacity=".6"/>
+      <path d="M897 374V386" stroke="#756444" stroke-width="1.4"/>
+      <path d="M893 386H901L897 399L893 386Z" fill="#7B2117" opacity=".65"/>
+      <ellipse cx="897" cy="352" rx="54" ry="48" fill="url(#lanternGlow)" opacity=".65"/>
+    </g>
+    <!-- red thread / ribbon across hall -->
+    <path d="M0 352C168 330 369 320 571 344" stroke="#5F1B16" stroke-width="2" opacity=".42"/>
+    <path d="M1400 338C1229 316 1030 316 830 340" stroke="#5F1B16" stroke-width="2" opacity=".42"/>
+    <path d="M362 330C360 358 365 383 361 407" stroke="#6F2119" stroke-width="10" opacity=".32"/>
+    <path d="M362 407C349 419 348 439 360 453C372 440 373 420 362 407Z" fill="#6F2119" opacity=".34"/>
+    <path d="M1032 327C1030 351 1035 372 1031 393" stroke="#6F2119" stroke-width="8" opacity=".3"/>
+    <!-- floor stains and marks -->
+    <g opacity=".3">
+      <ellipse cx="443" cy="774" rx="102" ry="23" fill="#080807" filter="url(#hallBlur)"/>
+      <ellipse cx="982" cy="737" rx="78" ry="18" fill="#080807" filter="url(#hallBlur)"/>
+      <path d="M681 649C699 671 719 706 728 731C704 715 686 692 681 649Z" fill="#0B0A08" opacity=".6"/>
+      <path d="M697 663C712 678 719 699 720 716" stroke="#7D281E" stroke-width="2" opacity=".18"/>
+    </g>
+    <!-- shoe near left door -->
+    <g transform="translate(352 760) rotate(-13)" opacity=".44">
+      <path d="M0 8C4 -7 28 -11 38 2C44 12 60 16 66 26C58 38 26 36 10 28C-1 22 -3 16 0 8Z" fill="#3C1914"/>
+      <path d="M46 20C55 24 62 30 63 35" stroke="#8A5E43" stroke-width="1.2" opacity=".35"/>
+    </g>
+    <!-- central light and fog -->
+    <ellipse cx="700" cy="486" rx="340" ry="300" fill="url(#endLight)"/>
+    <path d="M0 760C250 695 425 720 700 684C977 720 1150 697 1400 762V900H0V760Z" fill="#B7A47B" opacity=".035" filter="url(#hallBlur)"/>
+    <path d="M0 500C246 450 447 550 700 490C957 552 1138 452 1400 510V900H0V500Z" fill="#151A14" opacity=".15"/>
+    <!-- vignette -->
+    <radialGradient id="vignetteHall" cx="0" cy="0" r="1" gradientTransform="translate(700 470) rotate(90) scale(720 560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000" stop-opacity="0"/><stop offset=".6" stop-color="#000" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".82"/>
+    </radialGradient>
+    <rect width="1400" height="900" fill="url(#vignetteHall)"/>
+    <rect width="1400" height="900" filter="url(#hallGrain)" opacity=".6" style="mix-blend-mode:soft-light"/>
+  </g>
+</svg>
